@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="tas-com">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rechannelling Hans</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link href="./themes/prism.css" rel="stylesheet" />
+    <link href="./themes/tas_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="./d3/d3.v4.js" charset="utf-8"></script>
+    <script src="./lib/prism.js" charset="utf-8"></script>
+    <link href="./themes/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC|Titillium+Web|Fjalla+One" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <center>
+        <div class="heading">
+            <h1>Gapminder Assignment</h1>
+            <h3>Aaron S D'Souza: 18200047 || Arnab Tarwani: 18200051</h3>
+        </div>
+        <div id="scatter" class="main">
+        </div>
+        <div class="colorCountry" style="display: table;">
+            <div class="colorDis">
+                <button type="button" id="adv_eco" value="Advanced economies" class="btn btn-primary" onclick="continent(value)"
+                    ;>Advanced
+                    Economies</button>
+                <button type="button" id="mid_af_pak" value="Middle East, North Africa, and Pakistan" class="btn btn-primary"
+                    onclick="continent(value)" ;>
+                    Middle East, North Africa and Pakistan</button>
+                <button type="button" id="subsah_af" value="Sub-Saharan Africa" class="btn btn-primary" onclick="continent(value)"
+                    ;>Sub-Saharan
+                    Africa</button>
+                <button type="button" id="latam_car" value="Latin America and the Caribbean" class="btn btn-primary"
+                    onclick="continent(value)" ;>
+                    Latin America and the Caribbean</button>
+                <button type="button" id="com_insta" value="Commonwealth of Independent States" class="btn btn-primary"
+                    onclick="continent(value)" ;>
+                    Commonwealth of Independent States</button>
+                <button type="button" id="emer_deveu" value="Emerging and Developing Europe" class="btn btn-primary"
+                    onclick="continent(value)" ;>
+                    Emerging and Developing Europe</button>
+                <button type="button" id="eme_asia" value="Emerging and Developing Asia" class="btn btn-primary" onclick="continent(value)"
+                    ;>
+                    Emerging and Developing Asia</button>
+            </div>
+            </div>
+            <div id="scrollbar" style="padding: 10px">
+                <button type="submit" id="start" class="control_button" onclick=start();>start</button>
+                <button type="submit" class="control_button" onclick=stop();>stop</button>
+                <button type="submit" class="control_button" onclick=window.location.reload();>reset</button>
+                <div class="slider" style="padding:10px">
+                    <div><text style="padding-left: 10x">Enter Year between 2007 and 2017 to view scatter plot</text></div>
+                    <input type="text" id="sliderBarYear" value="2007" min="2006" max="2017" oninput="sliderWorks(this.value)"
+                        style="width: 300px;" ;>
+                </div>
+                <div style="padding: 10px">
+                    <h4>Select a country to view all the statistics</h4></div>
+            </div>
+            <div id = "dropDowns" style="padding-left: 30px;"></div>
+                <text style="padding-left: 30px">Select First Country</text>
+                <select id="countryDrop" style="float: initial; padding: 5px;"></select>
+                <button id="select" class="btn btn-success" onClick="countryyearSelected()" style="background:#00355a; stroke: #00355a; font-family: Arial, Helvetica, sans-serif; padding: 5px;">Select</button>
+                <text style="padding-left: 30px">Select Year</text>
+                    <select id="yearDrop" style="padding:5px;"></select>
+                <text style="padding-left: 30px">Select Country to Compare</text>
+                            <select id="countryDrop2" style="padding:5px"></select>
+                            <button id="select" class="btn btn-success" onClick="compareCountries() " style="background:#00355a; stroke: #00355a; font-family: Arial, Helvetica, sans-serif; padding: 5px;" ;>Compare</button>
+                            <label id="lblmessage"></label>
+                   <text style="padding-left: 30px">Select Pillar</text><select id="pillarDrop"></select>
+                    </div>
+            </div>
+
+        
+        <!-- Gapminder World Main Screen -->
+ 
+    </center>
+        <div class="row">
+    <center>
+            <div id="bar1" class="column" style =" float: left;
+    width: 50%; padding: 30px;"></div>
+            <div id="bar2" class="column" style =" float: left;
+    width: 50%; padding: 30px;"></div>
+    </center>
+        </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>

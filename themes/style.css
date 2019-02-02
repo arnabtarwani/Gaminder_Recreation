@@ -1,0 +1,153 @@
+/*the style of the continent selection div*/
+#adv_eco {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FF4040;
+    padding: 2px;
+
+}
+
+#mid_af_pak {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFEB3B;
+    padding: 2px;
+}
+
+
+#subsah_af {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f48942;
+    padding: 2px;
+}
+
+#latam_car {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #2176ff;
+    padding: 2px;
+}
+
+
+#com_insta {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #9c1df7;
+    padding: 2px;
+}
+
+#emer_deveu {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #837996;
+        padding: 2px;
+}
+
+#eme_asia {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #2ECC71;
+        padding: 2px;
+}
+
+/*the style of the continent selection div*/
+#scrollbar {
+    padding: 10px;
+}
+
+#dropDowns {
+    padding: 30 30 30 30px;
+    margin: 30 30 30 30px;
+}
+
+
+#countryDrop{
+    float: right;
+	width:157px;
+	padding:30px 30 30 30; 
+}
+#clearButton{
+	height:30px;
+	padding-top:1px;
+}
+#select{
+    height:30px;
+	padding-top:1px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.year {
+    font-size: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.15
+}
+
+/*the style sheet of top up div to show Countries' name */
+
+.tooltip {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    font-weight: bold;
+    padding: 10px;
+    background: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.colorCountry {
+    margin-bottom: 20px;
+    height: 10px;
+    border-radius: 5;
+    padding-inline-start: 5px;
+}
+
+.control_button {
+    background: #00355a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+   color: #ffffff;
+   padding: 10px;
+    -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 18px;
+    text-decoration-color: white;
+}
+
+.control_button:hover {
+    background: #16a5ec;
+    text-decoration: none;
+    
+}
+
+.slider {
+    flex-grow: 1;
+    cursor: pointer;
+    padding-left: 10px;
+    display: inline-block;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+.left-part {
+    float: left;
+}
+
+.barchrats {
+    float: right;
+}
+

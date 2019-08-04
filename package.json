@@ -2,7 +2,7 @@
   "name": "gaminder_recreation",
   "version": "1.0.0",
   "description": "You can find the working of this application here:\r https://codepen.io/arnabtarwani/project/full/Awgaja",
-  "main": "main.js",
+  "main": "index.html",
   "directories": {
     "lib": "lib"
   },

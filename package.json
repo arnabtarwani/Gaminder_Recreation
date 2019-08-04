@@ -1,0 +1,22 @@
+{
+  "name": "gaminder_recreation",
+  "version": "1.0.0",
+  "description": "You can find the working of this application here:\r https://codepen.io/arnabtarwani/project/full/Awgaja",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnabtarwani/Gaminder_Recreation.git"
+  },
+  "author": "Arnab Tarwani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnabtarwani/Gaminder_Recreation/issues"
+  },
+  "homepage": "https://github.com/arnabtarwani/Gaminder_Recreation#readme"
+}
